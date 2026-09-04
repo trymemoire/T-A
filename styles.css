@@ -61,7 +61,8 @@ button{font:inherit}
 .event-scene:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}
 .sangeet .event-copy{color:#24170f;top:10svh;text-shadow:0 2px 10px rgba(255,255,255,.35)}.sangeet:after{background:linear-gradient(180deg,rgba(247,231,179,.72) 0 38%,transparent 62%)}
 .sangeet .event-copy .date{font-size:20px}.sangeet .event-copy p{font-size:19px}
-.mehendi .event-copy{color:#231712;top:7svh;text-shadow:0 2px 12px rgba(255,245,222,.7)}.mehendi:after{background:linear-gradient(180deg,rgba(255,243,210,.55),transparent 46%)}
+.mehendi .event-copy{color:#231712;top:50%;text-shadow:0 2px 12px rgba(255,245,222,.7)}.mehendi:after{background:linear-gradient(180deg,rgba(255,243,210,.55),transparent 46%)}
+.mehendi .event-image img{object-fit:contain;transform:none}
 .ganesh-scene .event-copy{color:#fff5db;top:7svh;text-shadow:0 3px 16px rgba(60,0,0,.6)}.ganesh-scene:after{background:linear-gradient(180deg,rgba(70,0,0,.4),transparent 52%,rgba(0,0,0,.16))}
 .ganesh-scene .event-copy p{text-shadow:0 3px 14px rgba(40,0,0,.85),0 1px 6px rgba(0,0,0,.9)}
 .haldi .event-copy{color:#ffffff;top:5svh;text-shadow:0 2px 10px rgba(255,255,255,.65)}.haldi:after{background:linear-gradient(180deg,rgba(215,236,202,.3),transparent 43%)}
@@ -85,6 +86,7 @@ button{font:inherit}
 @media (min-width:701px){
   .door-scene .door-copy.reveal{transform:translate(-50%,-50%)}
   .event-scene .event-copy.reveal{transform:translateX(-50%)}
+  #mehendi .event-copy.reveal{transform:translate(-50%,-50%)}
 }
 
 /* V6 — PHONE-FIRST, NO-CLIP LAYOUT */
@@ -313,6 +315,7 @@ button{font:inherit}
     max-width: none;
     object-fit: cover;
   }
+    .mehendi .event-image img{object-fit:contain;transform:none}
 
   .event-copy,
   .sangeet .event-copy,
@@ -389,9 +392,10 @@ button{font:inherit}
   .sangeet .event-copy .date { font-size: clamp(15px, 4vw, 19px); }
   .sangeet .event-copy p { font-size: clamp(13px, 3.8vw, 16px); }
 
-  .mehendi .event-copy {
-    top: max(54px, 7svh);
-    top: max(54px, 7dvh);
+    .mehendi .event-copy {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
     color: #231712;
   }
 
