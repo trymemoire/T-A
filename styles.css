@@ -401,7 +401,7 @@ button{font:inherit}
     color: #231712;
   }
     .mehendi .event-copy .time { font-size: clamp(16px, 4.5vw, 24px); }
-    .mehendi .event-copy .date{position:absolute;top:max(54px,7svh);left:0;right:0;text-align:center}
+    .mehendi .event-copy .date{position:absolute;top:max(54px,7svh);left:50%;transform:translateX(-50%);white-space:nowrap;width:max-content}
 
   .mehendi .event-copy h2 {
     font-size: clamp(28px, 8vw, 42px);
