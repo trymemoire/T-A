@@ -437,7 +437,17 @@ button{font:inherit}
   }
 
 .haldi .event-copy .date { font-size: clamp(15px, 4vw, 19px); }
-.haldi .event-copy p { font-size: clamp(13px, 3.8vw, 16px); color: #fff; }
+.haldi .event-copy p {
+  font-size: clamp(18px, 5vw, 23px);
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 500;
+  text-shadow:
+    0 3px 10px rgba(0,0,0,.8),
+    0 1px 4px rgba(0,0,0,1);
+  max-width: 330px;
+  margin: 15px auto 0;
+}
 
   .baraat .event-copy {
   top: 50%;
